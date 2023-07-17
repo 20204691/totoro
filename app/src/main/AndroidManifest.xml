@@ -17,6 +17,9 @@
         android:theme="@style/Theme.BodyBoost"
         tools:targetApi="31">
         <activity
+            android:name=".FoodActivityDeatils"
+            android:exported="false" />
+        <activity
             android:name=".ThirdActivity2"
             android:exported="false" />
         <activity
