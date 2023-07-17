@@ -27,7 +27,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="fill_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/totoro_shtanga"
+                android:src="@drawable/totoro_r"
 
 
                 />
@@ -108,7 +108,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#ECEDE8"
-                        android:text="@string/pose11"
+                        android:text="@string/pose10"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
 

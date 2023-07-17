@@ -20,7 +20,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
 <!--1 - БЛОК-->
 <!--// рамка сама-->
@@ -107,7 +107,7 @@
                         <pl.droidsonroids.gif.GifImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/exersice_1"
+                            android:src="@drawable/totoro_shtanga"
 
 
                             />

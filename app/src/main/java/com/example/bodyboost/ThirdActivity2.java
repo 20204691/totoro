@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ThirdActivity extends AppCompatActivity {
+public class ThirdActivity2 extends AppCompatActivity {
 
     String buttonvalue;
     Button startBtn;
@@ -19,14 +19,14 @@ public class ThirdActivity extends AppCompatActivity {
     private boolean MTimeRunning;
     private long MTimeLeftinmills;
 
-    public ThirdActivity() {
+    public ThirdActivity2() {
     }
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_third2);
 
 
         Intent intent = getIntent();
@@ -41,34 +41,34 @@ public class ThirdActivity extends AppCompatActivity {
 
 
             case 1:
-                setContentView(R.layout.activity_bow);
+                setContentView(R.layout.activity_bow2);
                 break;
             case 2:
-                setContentView(R.layout.activity_bridge);
+                setContentView(R.layout.activity_bridge2);
                 break;
             case 3:
-                setContentView(R.layout.activity_chair);
+                setContentView(R.layout.activity_chair2);
                 break;
             case 4:
-                setContentView(R.layout.activity_child);
+                setContentView(R.layout.activity_child2);
                 break;
             case 5:
-                setContentView(R.layout.activity_cobbler);
+                setContentView(R.layout.activity_cobbler2);
                 break;
             case 6:
-                setContentView(R.layout.activity_cow);
+                setContentView(R.layout.activity_cow2);
                 break;
             case 7:
-                setContentView(R.layout.activity_playji);
+                setContentView(R.layout.activity_playji2);
                 break;
             case 8:
-                setContentView(R.layout.activity_pauseji);
+                setContentView(R.layout.activity_pauseji2);
                 break;
             case 9:
-                setContentView(R.layout.activity_plank);
+                setContentView(R.layout.activity_plank2);
                 break;
             case 10:
-                setContentView(R.layout.activity_crunches);
+                setContentView(R.layout.activity_crunches2);
                 break;
 
         }
@@ -128,8 +128,8 @@ public class ThirdActivity extends AppCompatActivity {
     private void startTimer()
 
     {
-        
-        
+
+
         final CharSequence value1 = mtextview.getText();
         String num1 = value1.toString();
         String num2 = num1.substring(0,2);
@@ -165,7 +165,7 @@ public class ThirdActivity extends AppCompatActivity {
                 if(newvalue<=7){
 
 
-                    Intent intent = new Intent(ThirdActivity.this, ThirdActivity.class);
+                    Intent intent = new Intent(ThirdActivity2.this, ThirdActivity2.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value",String.valueOf(newvalue));
                     startActivities(intent);
@@ -177,7 +177,7 @@ public class ThirdActivity extends AppCompatActivity {
 
 
                     newvalue =1;
-                    Intent intent = new Intent(ThirdActivity.this,ThirdActivity.class);
+                    Intent intent = new Intent(ThirdActivity2.this,ThirdActivity2.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value",String.valueOf(newvalue));
                     startActivities(intent);
@@ -189,10 +189,10 @@ public class ThirdActivity extends AppCompatActivity {
         MTimeRunning=true;
 
 
-        
-        
-        
-        
+
+
+
+
     }
 
     private void startActivities(Intent intent) {
