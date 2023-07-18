@@ -9,6 +9,7 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <item name="android:forceDarkAllowed" tools:targetApi="Q"> false</item>
 
+
         <!-- Customize your theme here. -->
     </style>
 
